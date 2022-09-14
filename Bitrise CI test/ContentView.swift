@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel: CombinationViewModel = CombinationViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+
+        VStack(alignment: .center, spacing: 5) {
+            TextField("First String", text: $viewModel.firstString)
+            TextField("Second String", text: $viewModel.secondString)
+            
+            Text(viewModel.result)
+        }
     }
 }
 
