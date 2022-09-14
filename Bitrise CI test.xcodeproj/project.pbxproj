@@ -11,7 +11,20 @@
 		825CB29528D2052100150B88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CB29428D2052100150B88 /* ContentView.swift */; };
 		825CB29728D2052400150B88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 825CB29628D2052400150B88 /* Assets.xcassets */; };
 		825CB29A28D2052400150B88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 825CB29928D2052400150B88 /* Preview Assets.xcassets */; };
+		825CB2A128D20CFB00150B88 /* CombinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CB2A028D20CFB00150B88 /* CombinationViewModel.swift */; };
+		825CB2B628D2110F00150B88 /* Bitrise_CI_test_Unit_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CB2B528D2110F00150B88 /* Bitrise_CI_test_Unit_Tests.swift */; };
+		825CB2BD28D2113500150B88 /* CombinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825CB2BC28D2113500150B88 /* CombinationTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		825CB2B728D2110F00150B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 825CB28728D2052100150B88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 825CB28E28D2052100150B88;
+			remoteInfo = "Bitrise CI test";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		825CB28F28D2052100150B88 /* Bitrise CI test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bitrise CI test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +32,21 @@
 		825CB29428D2052100150B88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		825CB29628D2052400150B88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		825CB29928D2052400150B88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		825CB2A028D20CFB00150B88 /* CombinationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationViewModel.swift; sourceTree = "<group>"; };
+		825CB2B328D2110E00150B88 /* Bitrise CI test Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bitrise CI test Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		825CB2B528D2110F00150B88 /* Bitrise_CI_test_Unit_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bitrise_CI_test_Unit_Tests.swift; sourceTree = "<group>"; };
+		825CB2BC28D2113500150B88 /* CombinationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		825CB28C28D2052100150B88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		825CB2B028D2110E00150B88 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				825CB29128D2052100150B88 /* Bitrise CI test */,
+				825CB2B428D2110F00150B88 /* Bitrise CI test Unit Tests */,
 				825CB29028D2052100150B88 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				825CB28F28D2052100150B88 /* Bitrise CI test.app */,
+				825CB2B328D2110E00150B88 /* Bitrise CI test Unit Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +81,7 @@
 				825CB29428D2052100150B88 /* ContentView.swift */,
 				825CB29628D2052400150B88 /* Assets.xcassets */,
 				825CB29828D2052400150B88 /* Preview Content */,
+				825CB2A028D20CFB00150B88 /* CombinationViewModel.swift */,
 			);
 			path = "Bitrise CI test";
 			sourceTree = "<group>";
@@ -65,6 +92,15 @@
 				825CB29928D2052400150B88 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		825CB2B428D2110F00150B88 /* Bitrise CI test Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				825CB2B528D2110F00150B88 /* Bitrise_CI_test_Unit_Tests.swift */,
+				825CB2BC28D2113500150B88 /* CombinationTests.swift */,
+			);
+			path = "Bitrise CI test Unit Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +123,24 @@
 			productReference = 825CB28F28D2052100150B88 /* Bitrise CI test.app */;
 			productType = "com.apple.product-type.application";
 		};
+		825CB2B228D2110E00150B88 /* Bitrise CI test Unit Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 825CB2B928D2110F00150B88 /* Build configuration list for PBXNativeTarget "Bitrise CI test Unit Tests" */;
+			buildPhases = (
+				825CB2AF28D2110E00150B88 /* Sources */,
+				825CB2B028D2110E00150B88 /* Frameworks */,
+				825CB2B128D2110E00150B88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				825CB2B828D2110F00150B88 /* PBXTargetDependency */,
+			);
+			name = "Bitrise CI test Unit Tests";
+			productName = "Bitrise CI test Unit Tests";
+			productReference = 825CB2B328D2110E00150B88 /* Bitrise CI test Unit Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +153,10 @@
 				TargetAttributes = {
 					825CB28E28D2052100150B88 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					825CB2B228D2110E00150B88 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 825CB28E28D2052100150B88;
 					};
 				};
 			};
@@ -116,6 +174,7 @@
 			projectRoot = "";
 			targets = (
 				825CB28E28D2052100150B88 /* Bitrise CI test */,
+				825CB2B228D2110E00150B88 /* Bitrise CI test Unit Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +189,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		825CB2B128D2110E00150B88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,11 +204,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				825CB29528D2052100150B88 /* ContentView.swift in Sources */,
+				825CB2A128D20CFB00150B88 /* CombinationViewModel.swift in Sources */,
 				825CB29328D2052100150B88 /* Bitrise_CI_testApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		825CB2AF28D2110E00150B88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				825CB2B628D2110F00150B88 /* Bitrise_CI_test_Unit_Tests.swift in Sources */,
+				825CB2BD28D2113500150B88 /* CombinationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		825CB2B828D2110F00150B88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 825CB28E28D2052100150B88 /* Bitrise CI test */;
+			targetProxy = 825CB2B728D2110F00150B88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		825CB29B28D2052400150B88 /* Debug */ = {
@@ -317,6 +401,40 @@
 			};
 			name = Release;
 		};
+		825CB2BA28D2110F00150B88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mohsen.Bitrise-CI-test-Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bitrise CI test.app/Bitrise CI test";
+			};
+			name = Debug;
+		};
+		825CB2BB28D2110F00150B88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mohsen.Bitrise-CI-test-Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bitrise CI test.app/Bitrise CI test";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +452,15 @@
 			buildConfigurations = (
 				825CB29E28D2052400150B88 /* Debug */,
 				825CB29F28D2052400150B88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		825CB2B928D2110F00150B88 /* Build configuration list for PBXNativeTarget "Bitrise CI test Unit Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				825CB2BA28D2110F00150B88 /* Debug */,
+				825CB2BB28D2110F00150B88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
